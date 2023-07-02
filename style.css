@@ -113,6 +113,8 @@ li {
     display: flex;
     flex-direction: column;
     padding: 50px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .features-tittle{
@@ -128,14 +130,63 @@ li {
 .features-boxes{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    column-gap: 125px;
+    row-gap: 35px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .features-boxes .box{
-    max-width: 100px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.features-boxes .box .tittle{
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .features-boxes .box img{
     max-width: 100px;
     margin-bottom: 15px;
 }
+
+.features-section button {
+    font-size: 18px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top:0px;
+}
+
+/* Quote Section */
+
+.quote-section {
+    display: flex;
+    background-color: #E5E7EB;
+    flex-wrap: wrap;
+    padding: 100px 200px;
+}
+
+.quote-section .quotes-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quote-section .quote {
+    font-size: 36px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.quote-section .author {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: end;
+}
+
+/* CTA Section */
