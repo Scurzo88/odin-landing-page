@@ -100,7 +100,16 @@ li {
     font-weight: 600;
     padding: 6px 12px;
     margin-top:0px;
+    border-color: #3882f6;
+    box-shadow: #3882f6 0px 7px 30px -10px;
 }
+
+.hero-text button:hover {
+    background-color: #22519c;
+    border-color: #22519c;
+  }
+
+
 
 .hero-image {
     max-width: 500px;
@@ -160,7 +169,15 @@ li {
     font-weight: 600;
     padding: 10px 30px;
     margin-top:0px;
+    border-color: #3882f6;
+    box-shadow: #3882f6 0px 7px 30px -10px;
 }
+
+.features-section button:hover {
+    background-color: #22519c;
+    border-color: #22519c;
+  }
+
 
 /* Quote Section */
 
@@ -225,13 +242,14 @@ li {
     color: #f9faf8;
     background-color: #3882f6;
     border-radius: 8px;
+    border-color: #f9faf8;;
     font-weight: 600;
     padding: 10px 30px;
     margin-top:0px;
     margin-left: auto;
 }
 
-/* CTA Section */
+/* Footer Section */
 
 .footer-section {
     display:flex;
@@ -241,4 +259,49 @@ li {
     color: #f9faf8;
     padding: 30px 0px;
     font-size: 15px;
+}
+
+
+/* Mobile Optimizations */
+
+@media (max-width: 768px) {
+    .logo-text {
+        display: none;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-links {
+        gap: 15px;
+    }
+
+    .features-tittle{
+        text-align: center;
+    }
+
+    .quote-section {
+        padding: 50px 50px;
+    }
+
+    .quote-section .quotes-box {
+        gap: 20px;
+    }
+
+    .quote-section .quote {
+        font-size: 25px;
+    }
+
+    .cta-section { 
+        padding: 50px 50px;
+    }
+
+    .cta-box {
+        padding: 50px 50px;
+    }
+
+    .cta-box button {
+        margin: auto;
+    }
 }
