@@ -1,12 +1,17 @@
 body {
     font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* Menu Section */
 
 nav {
     display:flex;
     background-color: #1f2937;
     padding: 2px;
-    padding-right: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
 }
 
 .logo {
@@ -19,8 +24,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 20px;
+    color: #f9faf8;
+    font-size: 24px;
     font-family: "Times New Roman", sans-serif;
     font-weight: 900;
 }
@@ -37,7 +42,100 @@ li {
     margin: 0;
 }
 
-a {
+.menu-links a {
     text-decoration: none;
-    color: white;
+    color: #f9faf8;
+    font-weight: 600;
+}
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    padding: 50px;
+    background-color: #1f2937;
+    column-gap: 30px;
+    row-gap: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f9faf8;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text .hero-tittle {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.hero-text .hero-description {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 700;
+}
+
+.hero-text .hero-description-2 {
+    margin-top: 10px;
+}
+
+.hero-text button {
+    font-size: 18px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    max-width: 120px;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 6px 12px;
+    margin-top:0px;
+}
+
+.hero-image {
+    max-width: 500px;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+/* Features Section */
+.features-section{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.features-tittle{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: #1f2937;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.features-boxes{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.features-boxes .box{
+    max-width: 100px;
+}
+
+.features-boxes .box img{
+    max-width: 100px;
+    margin-bottom: 15px;
 }
